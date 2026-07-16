@@ -303,7 +303,7 @@
   <div class="footer" id="footerActions" style="display:none;">
     <button class="btn secondary" id="exportBtn" type="button">Descargar asignación (JSON)</button>
     <button class="btn secondary" id="resetBtn" type="button">Vaciar reparto de este departamento</button>
-    <span class="save-note" id="saveNote">Guardado automáticamente en este navegador.</span>
+    <span class="save-note" id="saveNote">Los cambios se guardan automáticamente en Google Sheets.</span>
   </div>
 
   <div class="empty-msg" id="emptyMsg">Selecciona un departamento para empezar el reparto.</div>
@@ -311,6 +311,7 @@
 
 <script>
 /* ======= CONFIGURACIÓN ======= */
+const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbypg-CRdmOaq_62z_v-mo0Ot2fYd22rO3W5UIr2x_CwBAKEO8DnqV_DaN4W1rhjJ9JXOw/exec';
 const OBJ_MIN = 17, OBJ_MAX = 18;
 /* ============================== */
 
@@ -336,13 +337,65 @@ function loadAsignacion(depto){
     return raw ? JSON.parse(raw) : {};
   }catch(e){ return {}; }
 }
+
+let saveTimeout = null;
 function saveAsignacion(depto){
-  try{
-    localStorage.setItem(storageKey(depto), JSON.stringify(asignacionActual));
-    saveNote.textContent = 'Guardado automáticamente · ' + new Date().toLocaleTimeString('es-ES');
-  }catch(e){
-    saveNote.textContent = 'No se ha podido guardar en este navegador.';
+  try{ localStorage.setItem(storageKey(depto), JSON.stringify(asignacionActual)); }catch(e){}
+  saveNote.textContent = 'Cambios sin sincronizar con Google Sheets…';
+  clearTimeout(saveTimeout);
+  saveTimeout = setTimeout(() => sincronizarConGoogle(depto), 700);
+}
+
+function sincronizarConGoogle(deptoNombre){
+  if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.indexOf('PEGA_AQUI') === 0){
+    saveNote.textContent = 'Guardado solo en este navegador (falta configurar APPS_SCRIPT_URL).';
+    return;
   }
+  const depto = getDeptoData(deptoNombre);
+  const registros = depto.grupos.map(g => ({
+    grupoId: g.id,
+    materia: g.materia,
+    curso: g.curso,
+    grupo: g.grupo,
+    horas: g.horas,
+    profesor: asignacionActual[g.id] || ''
+  }));
+  saveNote.textContent = 'Guardando en Google Sheets…';
+  fetch(APPS_SCRIPT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify({ departamento: deptoNombre, registros: registros })
+  })
+  .then(res => res.json())
+  .then(data => {
+    if(data.status !== 'ok') throw new Error(data.message || 'Error desconocido del servidor.');
+    saveNote.textContent = 'Guardado en Google Sheets · ' + new Date().toLocaleTimeString('es-ES');
+  })
+  .catch(err => {
+    console.error(err);
+    saveNote.textContent = 'Error al guardar en Google Sheets: ' + err.message + ' (queda guardado en local)';
+  });
+}
+
+function cargarDesdeGoogle(deptoNombre){
+  if(!APPS_SCRIPT_URL || APPS_SCRIPT_URL.indexOf('PEGA_AQUI') === 0) return;
+  saveNote.textContent = 'Consultando Google Sheets…';
+  fetch(APPS_SCRIPT_URL + '?departamento=' + encodeURIComponent(deptoNombre))
+    .then(res => res.json())
+    .then(data => {
+      if(data.status !== 'ok') throw new Error(data.message || 'Error al consultar Google Sheets.');
+      if(deptoSelect.value !== deptoNombre) return; // el usuario ya cambió de departamento
+      const remoto = {};
+      (data.registros || []).forEach(r => { if(r.profesor) remoto[r.grupoId] = r.profesor; });
+      asignacionActual = remoto;
+      try{ localStorage.setItem(storageKey(deptoNombre), JSON.stringify(asignacionActual)); }catch(e){}
+      saveNote.textContent = 'Datos actualizados desde Google Sheets · ' + new Date().toLocaleTimeString('es-ES');
+      renderAll();
+    })
+    .catch(err => {
+      console.error(err);
+      saveNote.textContent = 'No se pudo conectar con Google Sheets, mostrando copia local.';
+    });
 }
 
 function getDeptoData(nombre){
@@ -454,8 +507,9 @@ function renderAll(){
 
 deptoSelect.addEventListener('change', () => {
   const deptoNombre = deptoSelect.value;
-  asignacionActual = deptoNombre ? loadAsignacion(deptoNombre) : {};
+  asignacionActual = deptoNombre ? loadAsignacion(deptoNombre) : {}; // copia local instantánea
   renderAll();
+  if(deptoNombre) cargarDesdeGoogle(deptoNombre); // luego se sobrescribe con el dato real de Sheets
 });
 
 document.getElementById('exportBtn').addEventListener('click', () => {
