@@ -1,0 +1,2178 @@
+{
+  "departamentos": [
+    {
+      "nombre": "Biología y Geología",
+      "totalHoras": 54,
+      "grupos": [
+        {
+          "id": "BIO-001",
+          "materia": "Biología y Geología",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "BIO-002",
+          "materia": "Biología y Geología",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "BIO-003",
+          "materia": "Biología y Geología",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "BIO-004",
+          "materia": "Biología y Geología",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "BIO-005",
+          "materia": "Biología y Geología",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "BIO-006",
+          "materia": "Biología y Geología",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "BIO-007",
+          "materia": "Biología y Geología",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "BIO-008",
+          "materia": "Biología y Geología",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "BIO-009",
+          "materia": "Cultura Científica",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "BIO-010",
+          "materia": "Laboratorio de Ciencias",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "BIO-011",
+          "materia": "Biología, Geología y Ciencias Ambientales",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "BIO-012",
+          "materia": "Anatomía Aplicada",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "BIO-013",
+          "materia": "Biología",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "BIO-014",
+          "materia": "Ciencias Aplicadas I",
+          "curso": "1º FPB",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "BIO-015",
+          "materia": "Ciencias Aplicadas II",
+          "curso": "2º FPB",
+          "grupo": "1",
+          "horas": 6
+        },
+        {
+          "id": "BIO-016",
+          "materia": "Codocencia",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "BIO-017",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        }
+      ]
+    },
+    {
+      "nombre": "Dibujo",
+      "totalHoras": 36,
+      "grupos": [
+        {
+          "id": "DIB-001",
+          "materia": "Educación Plástica, Visual y Audiovisual",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "DIB-002",
+          "materia": "Educación Plástica, Visual y Audiovisual",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "DIB-003",
+          "materia": "Educación Plástica, Visual y Audiovisual",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "DIB-004",
+          "materia": "Taller Artes Plásticas",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "DIB-005",
+          "materia": "Educación Plástica, Visual y Audiovisual",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "DIB-006",
+          "materia": "Educación Plástica, Visual y Audiovisual",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "DIB-007",
+          "materia": "Expresión artística",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "DIB-008",
+          "materia": "Expresión artística",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "DIB-009",
+          "materia": "Dibujo Técnico I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "DIB-010",
+          "materia": "Dibujo Técnico II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "DIB-011",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "DIB-012",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "DIB-013",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        }
+      ]
+    },
+    {
+      "nombre": "Economía",
+      "totalHoras": 32,
+      "grupos": [
+        {
+          "id": "ECO-001",
+          "materia": "Economía y emprendimiento",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "ECO-002",
+          "materia": "Economía y emprendimiento",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "ECO-003",
+          "materia": "Educación financiera",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ECO-004",
+          "materia": "Economía",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "ECO-005",
+          "materia": "Fundamentos de Administración y Gestión",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "ECO-006",
+          "materia": "Empresa y diseño de modelos de negocio",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "ECO-007",
+          "materia": "Itinerario personal para la empleabilidad",
+          "curso": "1º FPB",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ECO-008",
+          "materia": "Itinerario personal para la empleabilidad I",
+          "curso": "1º SMR",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ECO-009",
+          "materia": "Itinerario personal para la empleabilidad II",
+          "curso": "2º SMR",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ECO-010",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        }
+      ]
+    },
+    {
+      "nombre": "Educación Física",
+      "totalHoras": 36,
+      "grupos": [
+        {
+          "id": "EDU-001",
+          "materia": "EF",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "EDU-002",
+          "materia": "EF",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "EDU-003",
+          "materia": "EF",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "EDU-004",
+          "materia": "EF",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "EDU-005",
+          "materia": "EF",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "EDU-006",
+          "materia": "EF",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "EDU-007",
+          "materia": "EF",
+          "curso": "2º ESO",
+          "grupo": "4",
+          "horas": 2
+        },
+        {
+          "id": "EDU-008",
+          "materia": "EF",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "EDU-009",
+          "materia": "EF",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "EDU-010",
+          "materia": "EF",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "EDU-011",
+          "materia": "EF",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "EDU-012",
+          "materia": "EF",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "EDU-013",
+          "materia": "EF",
+          "curso": "4º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "EDU-014",
+          "materia": "EF",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "EDU-015",
+          "materia": "EF",
+          "curso": "1º BACH",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "EDU-016",
+          "materia": "Formación Física I",
+          "curso": "1º FPB",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "EDU-017",
+          "materia": "Formación Física II",
+          "curso": "2º FPB",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "EDU-018",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "EDU-019",
+          "materia": "Tutoría BACH",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Filosofía",
+      "totalHoras": 26,
+      "grupos": [
+        {
+          "id": "FIL-001",
+          "materia": "Educación en Valores Cívicos y Éticos",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "FIL-002",
+          "materia": "Educación en Valores Cívicos y Éticos",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 1
+        },
+        {
+          "id": "FIL-003",
+          "materia": "Educación en Valores Cívicos y Éticos",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 1
+        },
+        {
+          "id": "FIL-004",
+          "materia": "Taller de Filosofía",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FIL-005",
+          "materia": "Filosofía",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "FIL-006",
+          "materia": "Filosofía",
+          "curso": "1º BACH",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "FIL-007",
+          "materia": "Historia de la Filosofía",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "FIL-008",
+          "materia": "Historia de la Filosofía",
+          "curso": "2º BACH",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "FIL-009",
+          "materia": "MAE",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "FIL-010",
+          "materia": "MAE",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 1
+        },
+        {
+          "id": "FIL-011",
+          "materia": "MAE",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "FIL-012",
+          "materia": "Tutoría BACH",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "FIL-013",
+          "materia": "Tutoría ESO",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FIL-014",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        }
+      ]
+    },
+    {
+      "nombre": "Física y Química",
+      "totalHoras": 45,
+      "grupos": [
+        {
+          "id": "FÍS-001",
+          "materia": "Física y Química",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "FÍS-002",
+          "materia": "Física y Química",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "FÍS-003",
+          "materia": "Física y Química",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "FÍS-004",
+          "materia": "Física y Química",
+          "curso": "2º ESO",
+          "grupo": "4",
+          "horas": 3
+        },
+        {
+          "id": "FÍS-005",
+          "materia": "Física y Química",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FÍS-006",
+          "materia": "Física y Química",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "FÍS-007",
+          "materia": "Física y Química",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "FÍS-008",
+          "materia": "Física y Química",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "FÍS-009",
+          "materia": "Física y Química",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "FÍS-010",
+          "materia": "Física y Química",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 8
+        },
+        {
+          "id": "FÍS-011",
+          "materia": "Física",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "FÍS-012",
+          "materia": "Química",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "FÍS-013",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        }
+      ]
+    },
+    {
+      "nombre": "Francés",
+      "totalHoras": 34,
+      "grupos": [
+        {
+          "id": "FRA-001",
+          "materia": "Francés",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FRA-002",
+          "materia": "Francés",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "FRA-003",
+          "materia": "Francés",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "FRA-004",
+          "materia": "Francés",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FRA-005",
+          "materia": "Francés",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "FRA-006",
+          "materia": "Francés",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "FRA-007",
+          "materia": "Francés",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FRA-008",
+          "materia": "Francés",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FRA-009",
+          "materia": "Francés",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FRA-010",
+          "materia": "Francés",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "FRA-011",
+          "materia": "MAE",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FRA-012",
+          "materia": "MAE",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "FRA-013",
+          "materia": "CLEN",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "FRA-014",
+          "materia": "CLEN",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "FRA-015",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "FRA-016",
+          "materia": "Formación + CFIE",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        }
+      ]
+    },
+    {
+      "nombre": "Geografía e Historia",
+      "totalHoras": 87,
+      "grupos": [
+        {
+          "id": "GEO-001",
+          "materia": "Geografía e Historia",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "GEO-002",
+          "materia": "Geografía e Historia",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "GEO-003",
+          "materia": "Geografía e Historia",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "GEO-004",
+          "materia": "Geografía e Historia",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "GEO-005",
+          "materia": "Geografía e Historia",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "GEO-006",
+          "materia": "Geografía e Historia",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "GEO-007",
+          "materia": "Geografía e Historia",
+          "curso": "2º ESO",
+          "grupo": "4",
+          "horas": 3
+        },
+        {
+          "id": "GEO-008",
+          "materia": "Geografía e Historia",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "GEO-009",
+          "materia": "Geografía e Historia",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "GEO-010",
+          "materia": "Geografía e Historia",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "GEO-011",
+          "materia": "Geografía e Historia",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "GEO-012",
+          "materia": "Geografía e Historia",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "GEO-013",
+          "materia": "Geografía e Historia",
+          "curso": "4º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "GEO-014",
+          "materia": "Historia Mundo Contemporáneo",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "GEO-015",
+          "materia": "Historia de España",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "GEO-016",
+          "materia": "Historia de España",
+          "curso": "2º BACH",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "GEO-017",
+          "materia": "Historia del Arte",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "GEO-018",
+          "materia": "Geografía",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "GEO-019",
+          "materia": "MAE",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "GEO-020",
+          "materia": "Cultura clásica",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "GEO-021",
+          "materia": "Cultura clásica",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "GEO-022",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "GEO-023",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "GEO-024",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "GEO-025",
+          "materia": "Jefatura de Estudios",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 11
+        },
+        {
+          "id": "GEO-026",
+          "materia": "Coordinadora Convivencia",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        }
+      ]
+    },
+    {
+      "nombre": "Informática y Comunicaciones",
+      "totalHoras": 117,
+      "grupos": [
+        {
+          "id": "INF-001",
+          "materia": "TIC I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "INF-002",
+          "materia": "TIC II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "INF-003",
+          "materia": "Equipos Eléctricos y Electrónicos (SIF)",
+          "curso": "1º IFCB",
+          "grupo": "1",
+          "horas": 7
+        },
+        {
+          "id": "INF-004",
+          "materia": "Montaje y Mantenimiento de Sistemas (SIF)",
+          "curso": "1º IFCB",
+          "grupo": "1",
+          "horas": 10
+        },
+        {
+          "id": "INF-005",
+          "materia": "Instalación y Mantenimiento de redes (SIF)",
+          "curso": "2º IFCB",
+          "grupo": "1",
+          "horas": 8
+        },
+        {
+          "id": "INF-006",
+          "materia": "Operación Configuración y explotación (SIF)",
+          "curso": "2º IFCB",
+          "grupo": "1",
+          "horas": 8
+        },
+        {
+          "id": "INF-007",
+          "materia": "Aplicaciones ofimáticas (SIF)",
+          "curso": "1º SMR",
+          "grupo": "1",
+          "horas": 6
+        },
+        {
+          "id": "INF-008",
+          "materia": "Aplicaciones web (INF)",
+          "curso": "1º SMR",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "INF-009",
+          "materia": "Redes locales (INF)",
+          "curso": "1º SMR",
+          "grupo": "1",
+          "horas": 7
+        },
+        {
+          "id": "INF-010",
+          "materia": "Sistemas operativos monopuesto (SIF)",
+          "curso": "1º SMR",
+          "grupo": "1",
+          "horas": 7
+        },
+        {
+          "id": "INF-011",
+          "materia": "Innovación aplicada al sector productivo (Módulo optativo I)",
+          "curso": "1º SMR",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "INF-012",
+          "materia": "Montaje y mantenimiento de equipo (SIF)",
+          "curso": "2º SMR",
+          "grupo": "1",
+          "horas": 7
+        },
+        {
+          "id": "INF-013",
+          "materia": "Seguridad Informática (INF)",
+          "curso": "2º SMR",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "INF-014",
+          "materia": "Servicios en Red (INF)",
+          "curso": "2º SMR",
+          "grupo": "1",
+          "horas": 6
+        },
+        {
+          "id": "INF-015",
+          "materia": "Sistemas operativos en red (SIF)",
+          "curso": "2º SMR",
+          "grupo": "1",
+          "horas": 6
+        },
+        {
+          "id": "INF-016",
+          "materia": "Digitalización Aplicada a los Sectores Productivos",
+          "curso": "2º SMR",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "INF-017",
+          "materia": "Sostenibilidad Aplicada al Sistema Productivo",
+          "curso": "2º SMR",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "INF-018",
+          "materia": "Fundamentos de Programación (Módulo optativo II)",
+          "curso": "2º SMR",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "INF-019",
+          "materia": "FFE GM",
+          "curso": "SMR",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "INF-020",
+          "materia": "FFE FPB",
+          "curso": "FPB",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "INF-021",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "INF-022",
+          "materia": "MAE",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "INF-023",
+          "materia": "Tutoría FPB",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "INF-024",
+          "materia": "Tutoría FPB",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "INF-025",
+          "materia": "Secretaría",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 10
+        }
+      ]
+    },
+    {
+      "nombre": "Inglés",
+      "totalHoras": 82,
+      "grupos": [
+        {
+          "id": "ING-001",
+          "materia": "Inglés",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "ING-002",
+          "materia": "Inglés",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "ING-003",
+          "materia": "Inglés",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 4
+        },
+        {
+          "id": "ING-004",
+          "materia": "Inglés",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-005",
+          "materia": "Inglés",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "ING-006",
+          "materia": "Inglés",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "ING-007",
+          "materia": "Inglés",
+          "curso": "2º ESO",
+          "grupo": "4",
+          "horas": 3
+        },
+        {
+          "id": "ING-008",
+          "materia": "Inglés",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-009",
+          "materia": "Inglés",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "ING-010",
+          "materia": "Inglés",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "ING-011",
+          "materia": "Inglés",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-012",
+          "materia": "Inglés",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "ING-013",
+          "materia": "Inglés",
+          "curso": "4º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "ING-014",
+          "materia": "Inglés I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-015",
+          "materia": "Inglés I",
+          "curso": "1º BACH",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "ING-016",
+          "materia": "Inglés II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-017",
+          "materia": "Inglés II",
+          "curso": "2º BACH",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "ING-018",
+          "materia": "Desdoble DIV",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-019",
+          "materia": "Desdoble DIV",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-020",
+          "materia": "Comunicación y sociedad I",
+          "curso": "1º IFCB",
+          "grupo": "1",
+          "horas": 5
+        },
+        {
+          "id": "ING-021",
+          "materia": "Comunicación y sociedad II",
+          "curso": "2º IFCB",
+          "grupo": "1",
+          "horas": 6
+        },
+        {
+          "id": "ING-022",
+          "materia": "Inglés Profesional",
+          "curso": "1º SMR",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ING-023",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-024",
+          "materia": "Erasmus",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ING-025",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ING-026",
+          "materia": "Tutoría BACH",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Cultura Clásica",
+      "totalHoras": 51,
+      "grupos": [
+        {
+          "id": "CUL-001",
+          "materia": "Cultura Clásica",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "CUL-002",
+          "materia": "Cultura Clásica",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "CUL-003",
+          "materia": "Cultura Clásica",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "CUL-004",
+          "materia": "Cultura Clásica",
+          "curso": "2º ESO",
+          "grupo": "4",
+          "horas": 3
+        },
+        {
+          "id": "CUL-005",
+          "materia": "Cultura Clásica",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "CUL-006",
+          "materia": "Latín",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "CUL-007",
+          "materia": "Latín",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "CUL-008",
+          "materia": "Latín I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "CUL-009",
+          "materia": "Latín II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "CUL-010",
+          "materia": "Griego I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "CUL-011",
+          "materia": "Griego II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "CUL-012",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "CUL-013",
+          "materia": "Dirección",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 10
+        }
+      ]
+    },
+    {
+      "nombre": "Lengua Castellana y Literatura",
+      "totalHoras": 89,
+      "grupos": [
+        {
+          "id": "LEN-001",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "LEN-002",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "LEN-003",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 4
+        },
+        {
+          "id": "LEN-004",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "LEN-005",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "LEN-006",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 4
+        },
+        {
+          "id": "LEN-007",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "2º ESO",
+          "grupo": "4",
+          "horas": 4
+        },
+        {
+          "id": "LEN-008",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "LEN-009",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "LEN-010",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 4
+        },
+        {
+          "id": "LEN-011",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "LEN-012",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "LEN-013",
+          "materia": "Lengua Castellana y Literatura",
+          "curso": "4º ESO",
+          "grupo": "3",
+          "horas": 4
+        },
+        {
+          "id": "LEN-014",
+          "materia": "Lengua Castellana y Literatura I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "LEN-015",
+          "materia": "Lengua Castellana y Literatura I",
+          "curso": "1º BACH",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "LEN-016",
+          "materia": "Lengua Castellana y Literatura II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "LEN-017",
+          "materia": "Lengua Castellana y Literatura II",
+          "curso": "2º BACH",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "LEN-018",
+          "materia": "CLEN",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "LEN-019",
+          "materia": "Literatura Universal",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 8
+        },
+        {
+          "id": "LEN-020",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "LEN-021",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "LEN-022",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "LEN-023",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "LEN-024",
+          "materia": "Biblioteca y Fomento de la Lectura",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        }
+      ]
+    },
+    {
+      "nombre": "Matemáticas",
+      "totalHoras": 97,
+      "grupos": [
+        {
+          "id": "MAT-001",
+          "materia": "Matemáticas",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-002",
+          "materia": "Matemáticas",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "MAT-003",
+          "materia": "Matemáticas",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 4
+        },
+        {
+          "id": "MAT-004",
+          "materia": "CMAT",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "MAT-005",
+          "materia": "CMAT",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "MAT-006",
+          "materia": "Matemáticas",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-007",
+          "materia": "Matemáticas",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "MAT-008",
+          "materia": "Matemáticas",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 4
+        },
+        {
+          "id": "MAT-009",
+          "materia": "Matemáticas",
+          "curso": "2º ESO",
+          "grupo": "4",
+          "horas": 4
+        },
+        {
+          "id": "MAT-010",
+          "materia": "CMAT",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "MAT-011",
+          "materia": "Matemáticas",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-012",
+          "materia": "Matemáticas",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "MAT-013",
+          "materia": "Matemáticas",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 4
+        },
+        {
+          "id": "MAT-014",
+          "materia": "CMAT",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "MAT-015",
+          "materia": "Matemáticas A",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-016",
+          "materia": "Matemáticas B",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-017",
+          "materia": "Matemáticas B",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "MAT-018",
+          "materia": "CMAT",
+          "curso": "4º DIV",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "MAT-019",
+          "materia": "Matemáticas I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-020",
+          "materia": "Matemáticas I",
+          "curso": "1º BACH",
+          "grupo": "2",
+          "horas": 4
+        },
+        {
+          "id": "MAT-021",
+          "materia": "Matemáticas APLIC I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-022",
+          "materia": "Matemáticas II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-023",
+          "materia": "Matemáticas APLIC II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "MAT-024",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "MAT-025",
+          "materia": "JEF. ADJUNTA",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 9
+        },
+        {
+          "id": "MAT-026",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "MAT-027",
+          "materia": "Tutoría BACH",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 1
+        }
+      ]
+    },
+    {
+      "nombre": "Música",
+      "totalHoras": 26,
+      "grupos": [
+        {
+          "id": "MÚS-001",
+          "materia": "Música",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "MÚS-002",
+          "materia": "Música",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "MÚS-003",
+          "materia": "Música",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "MÚS-004",
+          "materia": "Música",
+          "curso": "2º ESO",
+          "grupo": "4",
+          "horas": 3
+        },
+        {
+          "id": "MÚS-005",
+          "materia": "Música",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "MÚS-006",
+          "materia": "Música",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "MÚS-007",
+          "materia": "Taller Expresión Musical",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "MÚS-008",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "MÚS-009",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "MÚS-010",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "2",
+          "horas": 2
+        }
+      ]
+    },
+    {
+      "nombre": "Orientación",
+      "totalHoras": 52,
+      "grupos": [
+        {
+          "id": "ORI-001",
+          "materia": "Formación y orientación Personal y Profesional",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ORI-002",
+          "materia": "Ámbito Científico-Tecnológico",
+          "curso": "3º DIV",
+          "grupo": "1",
+          "horas": 8
+        },
+        {
+          "id": "ORI-003",
+          "materia": "Ámbito Científico-Tecnológico",
+          "curso": "4º DIV",
+          "grupo": "1",
+          "horas": 8
+        },
+        {
+          "id": "ORI-004",
+          "materia": "Ámbito Lingüístico Social",
+          "curso": "3º DIV",
+          "grupo": "1",
+          "horas": 7
+        },
+        {
+          "id": "ORI-005",
+          "materia": "Ámbito Lingüístico Social",
+          "curso": "4º DIV",
+          "grupo": "1",
+          "horas": 7
+        },
+        {
+          "id": "ORI-006",
+          "materia": "CLEN",
+          "curso": "4º DIV",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ORI-007",
+          "materia": "Psicología",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "ORI-008",
+          "materia": "CLEN",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ORI-009",
+          "materia": "CLEN",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ORI-010",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "ORI-011",
+          "materia": "Tutoría DIV",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "ORI-012",
+          "materia": "Tutoría DIV",
+          "curso": "Sin curso",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "ORI-013",
+          "materia": "Reducción sindical",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        }
+      ]
+    },
+    {
+      "nombre": "Religión",
+      "totalHoras": 24,
+      "grupos": [
+        {
+          "id": "REL-001",
+          "materia": "Religión",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "REL-002",
+          "materia": "Religión",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 1
+        },
+        {
+          "id": "REL-003",
+          "materia": "Religión",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 1
+        },
+        {
+          "id": "REL-004",
+          "materia": "Religión",
+          "curso": "2º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "REL-005",
+          "materia": "Religión",
+          "curso": "2º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "REL-006",
+          "materia": "Religión",
+          "curso": "2º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "REL-007",
+          "materia": "Religión",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "REL-008",
+          "materia": "Religión",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 1
+        },
+        {
+          "id": "REL-009",
+          "materia": "Religión",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 1
+        },
+        {
+          "id": "REL-010",
+          "materia": "Religión",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 1
+        },
+        {
+          "id": "REL-011",
+          "materia": "Religión",
+          "curso": "4º ESO",
+          "grupo": "2",
+          "horas": 1
+        },
+        {
+          "id": "REL-012",
+          "materia": "Religión",
+          "curso": "4º ESO",
+          "grupo": "3",
+          "horas": 1
+        },
+        {
+          "id": "REL-013",
+          "materia": "Religión",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "REL-014",
+          "materia": "Otras Actividades",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "REL-015",
+          "materia": "JDEP EXTR",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "REL-016",
+          "materia": "Tutoría ESO",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        }
+      ]
+    },
+    {
+      "nombre": "Tecnología",
+      "totalHoras": 36,
+      "grupos": [
+        {
+          "id": "TEC-001",
+          "materia": "Tecnología y digitalización",
+          "curso": "1º ESO",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "TEC-002",
+          "materia": "Tecnología y digitalización",
+          "curso": "1º ESO",
+          "grupo": "2",
+          "horas": 3
+        },
+        {
+          "id": "TEC-003",
+          "materia": "Tecnología y digitalización",
+          "curso": "1º ESO",
+          "grupo": "3",
+          "horas": 3
+        },
+        {
+          "id": "TEC-004",
+          "materia": "Tecnología y digitalización",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "TEC-005",
+          "materia": "Tecnología y digitalización",
+          "curso": "3º ESO",
+          "grupo": "2",
+          "horas": 2
+        },
+        {
+          "id": "TEC-006",
+          "materia": "Tecnología y digitalización",
+          "curso": "3º ESO",
+          "grupo": "3",
+          "horas": 2
+        },
+        {
+          "id": "TEC-007",
+          "materia": "Control y Robótica",
+          "curso": "3º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "TEC-008",
+          "materia": "Ámbito práctico",
+          "curso": "3º DIV",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "TEC-009",
+          "materia": "Ámbito práctico",
+          "curso": "4º DIV",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "TEC-010",
+          "materia": "Tecnología",
+          "curso": "4º ESO",
+          "grupo": "1",
+          "horas": 2
+        },
+        {
+          "id": "TEC-011",
+          "materia": "Tecnología e Ingeniería I",
+          "curso": "1º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "TEC-012",
+          "materia": "Tecnología e Ingeniería II",
+          "curso": "2º BACH",
+          "grupo": "1",
+          "horas": 4
+        },
+        {
+          "id": "TEC-013",
+          "materia": "JDEP",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 3
+        },
+        {
+          "id": "TEC-014",
+          "materia": "Responsable Equipos Informáticos",
+          "curso": "Sin curso",
+          "grupo": "1",
+          "horas": 2
+        }
+      ]
+    }
+  ]
+}

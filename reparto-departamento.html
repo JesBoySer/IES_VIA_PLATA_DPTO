@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reparto de horas por departamento · IES Vía de la Plata</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FAF9F4;
+    --paper-line:#D9E1E8;
+    --surface:#FFFFFF;
+    --border:#E3E0D4;
+    --ink:#1C2430;
+    --ink-soft:#5B6472;
+    --ink-faint:#9AA2AC;
+    --success:#3F7A5C;
+    --success-bg:#E8F1EC;
+    --warn:#B8842C;
+    --warn-bg:#FBF0DE;
+    --danger:#B23A2E;
+    --danger-bg:#F7E7E4;
+    --accent:#2C5C8A;
+    --accent-bg:#E6EDF4;
+    --radius:3px;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:
+      repeating-linear-gradient(0deg, var(--paper-line) 0 1px, transparent 1px 28px),
+      repeating-linear-gradient(90deg, var(--paper-line) 0 1px, transparent 1px 28px),
+      var(--paper);
+    background-attachment:local;
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    min-height:100vh;
+    padding:40px 16px 80px;
+  }
+  .sheet{
+    max-width:980px;
+    margin:0 auto;
+    background:var(--surface);
+    border:1px solid var(--border);
+    box-shadow:0 1px 2px rgba(28,36,48,0.04), 0 12px 32px -16px rgba(28,36,48,0.18);
+  }
+  .letterhead{
+    padding:32px 40px 24px;
+    border-bottom:1px solid var(--border);
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .eyebrow{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin:0 0 6px;
+  }
+  h1{
+    font-family:'Space Mono',monospace;
+    font-weight:700;
+    font-size:24px;
+    line-height:1.25;
+    margin:0;
+    color:var(--ink);
+  }
+  .course-tag{
+    font-family:'Space Mono',monospace;
+    font-size:13px;
+    border:1px solid var(--ink);
+    padding:6px 12px;
+    white-space:nowrap;
+    color:var(--ink);
+  }
+  .section{
+    padding:28px 40px;
+    border-bottom:1px dashed var(--border);
+  }
+  .section:last-of-type{border-bottom:none;}
+  .section-label{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.1em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin:0 0 16px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .section-label::after{
+    content:'';
+    flex:1;
+    height:1px;
+    background:var(--border);
+  }
+  .field{display:flex;flex-direction:column;gap:6px;max-width:420px;}
+  .field label{font-size:12.5px;font-weight:600;color:var(--ink-soft);}
+  .field select{
+    font-family:'Inter',sans-serif;
+    font-size:14.5px;
+    padding:10px 12px;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:var(--paper);
+    color:var(--ink);
+    outline:none;
+    width:100%;
+    -webkit-appearance:none;
+    appearance:none;
+  }
+  .field select:focus{border-color:var(--ink);}
+
+  .stats-row{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-top:18px;
+  }
+  .stat{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:12px 14px;
+    background:var(--paper);
+  }
+  .stat .num{font-family:'Space Mono',monospace;font-weight:700;font-size:20px;color:var(--ink);}
+  .stat .lbl{font-size:11.5px;color:var(--ink-soft);margin-top:2px;}
+  .stat.warn .num{color:var(--warn);}
+  .stat.danger .num{color:var(--danger);}
+
+  .prof-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:12px;
+  }
+  .prof-card{
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    padding:14px;
+    background:var(--paper);
+  }
+  .prof-card .name{
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--ink);
+    margin-bottom:8px;
+    line-height:1.3;
+  }
+  .prof-card .hours-line{
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+    font-family:'Space Mono',monospace;
+    font-size:13px;
+    margin-bottom:6px;
+  }
+  .prof-card .hours-line b{font-size:17px;}
+  .bar-track{
+    height:7px;
+    border-radius:4px;
+    background:var(--border);
+    overflow:hidden;
+  }
+  .bar-fill{height:100%;border-radius:4px;transition:width .2s ease;}
+  .bar-fill.under{background:var(--accent);}
+  .bar-fill.ok{background:var(--success);}
+  .bar-fill.over{background:var(--danger);}
+  .prof-card .status{
+    font-size:11px;
+    margin-top:6px;
+    color:var(--ink-soft);
+  }
+  .prof-card .status.ok{color:var(--success);}
+  .prof-card .status.over{color:var(--danger);}
+
+  table.groups{
+    width:100%;
+    border-collapse:collapse;
+    font-size:13.5px;
+  }
+  table.groups th{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    text-align:left;
+    padding:8px 10px;
+    border-bottom:1px solid var(--border);
+  }
+  table.groups td{
+    padding:8px 10px;
+    border-bottom:1px solid var(--border);
+    vertical-align:middle;
+  }
+  table.groups tr.unassigned td{background:var(--warn-bg);}
+  table.groups td.hours{font-family:'Space Mono',monospace;text-align:center;width:60px;}
+  table.groups td.assign{width:260px;}
+  table.groups select{
+    width:100%;
+    font-family:'Inter',sans-serif;
+    font-size:13.5px;
+    padding:7px 9px;
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    background:var(--surface);
+    color:var(--ink);
+    outline:none;
+    -webkit-appearance:none;
+    appearance:none;
+  }
+  table.groups select:focus{border-color:var(--ink);}
+  table.groups select.empty{border-color:var(--warn);color:var(--warn);}
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+
+  .footer{
+    padding:24px 40px 32px;
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    align-items:center;
+  }
+  .btn{
+    font-family:'Space Mono',monospace;
+    font-size:13px;
+    letter-spacing:0.03em;
+    padding:12px 18px;
+    border-radius:var(--radius);
+    cursor:pointer;
+    border:1px solid var(--ink);
+    background:var(--ink);
+    color:var(--paper);
+    touch-action:manipulation;
+  }
+  .btn:hover{background:#000;}
+  .btn.secondary{background:var(--surface);color:var(--ink);}
+  .btn.secondary:hover{background:var(--paper);}
+  .save-note{font-size:12px;color:var(--ink-soft);font-family:'Space Mono',monospace;}
+  .empty-msg{
+    padding:60px 40px;
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:14px;
+  }
+
+  @media (max-width:640px){
+    .letterhead{padding:20px 16px 16px;}
+    .section{padding:20px 16px;}
+    .footer{padding:16px 16px 24px;}
+    h1{font-size:19px;}
+    .stats-row{grid-template-columns:repeat(2,1fr);}
+    table.groups td.assign{width:180px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="sheet">
+  <div class="letterhead">
+    <div>
+      <p class="eyebrow">IES Vía de la Plata · Guijuelo</p>
+      <h1>Reparto de horas por departamento</h1>
+    </div>
+    <div class="course-tag">CURSO 2025–26</div>
+  </div>
+
+  <div class="section">
+    <p class="section-label">Departamento</p>
+    <div class="field">
+      <label for="fDepto">Selecciona tu departamento</label>
+      <select id="fDepto">
+        <option value="">Cargando...</option>
+      </select>
+    </div>
+    <div class="stats-row" id="statsRow" style="display:none;"></div>
+  </div>
+
+  <div class="section" id="profSection" style="display:none;">
+    <p class="section-label">Resumen por profesor · objetivo 17–18h</p>
+    <p style="font-size:12.5px;color:var(--ink-soft);margin:-8px 0 16px;">Cifras por debajo de 17h pueden ser correctas si hay medias jornadas u otras reducciones.</p>
+    <div class="prof-grid" id="profGrid"></div>
+  </div>
+
+  <div class="section" id="groupsSection" style="display:none;">
+    <p class="section-label">Materias, cursos y grupos del departamento</p>
+    <div class="table-wrap">
+      <table class="groups">
+        <thead>
+          <tr><th>Materia</th><th>Curso</th><th>Grupo</th><th>Horas</th><th>Profesor asignado</th></tr>
+        </thead>
+        <tbody id="groupsBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="footer" id="footerActions" style="display:none;">
+    <button class="btn secondary" id="exportBtn" type="button">Descargar asignación (JSON)</button>
+    <button class="btn secondary" id="resetBtn" type="button">Vaciar reparto de este departamento</button>
+    <span class="save-note" id="saveNote">Guardado automáticamente en este navegador.</span>
+  </div>
+
+  <div class="empty-msg" id="emptyMsg">Selecciona un departamento para empezar el reparto.</div>
+</div>
+
+<script>
+/* ======= CONFIGURACIÓN ======= */
+const OBJ_MIN = 17, OBJ_MAX = 18;
+/* ============================== */
+
+let asignaturasData = null;   // { departamentos: [ {nombre, totalHoras, grupos:[{id,materia,curso,grupo,horas}]} ] }
+let profesoresData = null;    // { "Departamento": ["Apellidos, Nombre", ...] }
+let asignacionActual = {};    // { grupoId: "Apellidos, Nombre" }
+
+const deptoSelect = document.getElementById('fDepto');
+const statsRow = document.getElementById('statsRow');
+const profSection = document.getElementById('profSection');
+const profGrid = document.getElementById('profGrid');
+const groupsSection = document.getElementById('groupsSection');
+const groupsBody = document.getElementById('groupsBody');
+const footerActions = document.getElementById('footerActions');
+const emptyMsg = document.getElementById('emptyMsg');
+const saveNote = document.getElementById('saveNote');
+
+function storageKey(depto){ return 'reparto_' + depto; }
+
+function loadAsignacion(depto){
+  try{
+    const raw = localStorage.getItem(storageKey(depto));
+    return raw ? JSON.parse(raw) : {};
+  }catch(e){ return {}; }
+}
+function saveAsignacion(depto){
+  try{
+    localStorage.setItem(storageKey(depto), JSON.stringify(asignacionActual));
+    saveNote.textContent = 'Guardado automáticamente · ' + new Date().toLocaleTimeString('es-ES');
+  }catch(e){
+    saveNote.textContent = 'No se ha podido guardar en este navegador.';
+  }
+}
+
+function getDeptoData(nombre){
+  return asignaturasData.departamentos.find(d => d.nombre === nombre);
+}
+
+function renderAll(){
+  const deptoNombre = deptoSelect.value;
+  if(!deptoNombre){
+    statsRow.style.display = 'none';
+    profSection.style.display = 'none';
+    groupsSection.style.display = 'none';
+    footerActions.style.display = 'none';
+    emptyMsg.style.display = 'block';
+    return;
+  }
+  emptyMsg.style.display = 'none';
+  statsRow.style.display = 'grid';
+  profSection.style.display = 'block';
+  groupsSection.style.display = 'block';
+  footerActions.style.display = 'flex';
+
+  const depto = getDeptoData(deptoNombre);
+  const profesores = profesoresData[deptoNombre] || [];
+
+  // --- estadísticas generales ---
+  const totalGrupos = depto.grupos.length;
+  const asignados = depto.grupos.filter(g => asignacionActual[g.id]).length;
+  const sinAsignar = totalGrupos - asignados;
+  statsRow.innerHTML = `
+    <div class="stat"><div class="num">${depto.totalHoras}</div><div class="lbl">Horas totales dpto.</div></div>
+    <div class="stat"><div class="num">${totalGrupos}</div><div class="lbl">Grupos/tramos</div></div>
+    <div class="stat"><div class="num">${asignados}</div><div class="lbl">Asignados</div></div>
+    <div class="stat ${sinAsignar>0?'warn':''}"><div class="num">${sinAsignar}</div><div class="lbl">Sin asignar</div></div>
+  `;
+
+  // --- resumen por profesor ---
+  const horasPorProfesor = {};
+  profesores.forEach(p => horasPorProfesor[p] = 0);
+  depto.grupos.forEach(g => {
+    const p = asignacionActual[g.id];
+    if(p && horasPorProfesor.hasOwnProperty(p)){
+      horasPorProfesor[p] += g.horas;
+    }
+  });
+
+  profGrid.innerHTML = '';
+  profesores.forEach(p => {
+    const horas = horasPorProfesor[p] || 0;
+    const pct = Math.min(100, (horas / OBJ_MAX) * 100);
+    let barClass = 'under', statusClass = '', statusTxt = `Faltan ${Math.max(0, OBJ_MIN - horas)}h para el mínimo orientativo`;
+    if(horas >= OBJ_MIN && horas <= OBJ_MAX){
+      barClass = 'ok'; statusClass = 'ok'; statusTxt = 'Dentro del objetivo (17–18h)';
+    } else if(horas > OBJ_MAX){
+      barClass = 'over'; statusClass = 'over'; statusTxt = `${horas - OBJ_MAX}h por encima del objetivo`;
+    } else if (horas === 0){
+      statusTxt = 'Sin horas asignadas todavía';
+    }
+    const card = document.createElement('div');
+    card.className = 'prof-card';
+    card.innerHTML = `
+      <div class="name">${p}</div>
+      <div class="hours-line"><span>Horas asignadas</span><b>${horas}h</b></div>
+      <div class="bar-track"><div class="bar-fill ${barClass}" style="width:${pct}%;"></div></div>
+      <div class="status ${statusClass}">${statusTxt}</div>
+    `;
+    profGrid.appendChild(card);
+  });
+
+  // --- tabla de grupos ---
+  groupsBody.innerHTML = '';
+  depto.grupos.forEach(g => {
+    const tr = document.createElement('tr');
+    const asignado = asignacionActual[g.id] || '';
+    if(!asignado) tr.className = 'unassigned';
+    tr.innerHTML = `
+      <td>${g.materia}</td>
+      <td>${g.curso}</td>
+      <td>${g.grupo}</td>
+      <td class="hours">${g.horas}h</td>
+      <td class="assign"></td>
+    `;
+    const select = document.createElement('select');
+    select.className = asignado ? '' : 'empty';
+    const optEmpty = document.createElement('option');
+    optEmpty.value = '';
+    optEmpty.textContent = '— Sin asignar —';
+    select.appendChild(optEmpty);
+    profesores.forEach(p => {
+      const opt = document.createElement('option');
+      opt.value = p;
+      opt.textContent = p;
+      if(p === asignado) opt.selected = true;
+      select.appendChild(opt);
+    });
+    select.addEventListener('change', () => {
+      if(select.value){
+        asignacionActual[g.id] = select.value;
+      } else {
+        delete asignacionActual[g.id];
+      }
+      saveAsignacion(deptoNombre);
+      renderAll();
+    });
+    tr.querySelector('td.assign').appendChild(select);
+    groupsBody.appendChild(tr);
+  });
+}
+
+deptoSelect.addEventListener('change', () => {
+  const deptoNombre = deptoSelect.value;
+  asignacionActual = deptoNombre ? loadAsignacion(deptoNombre) : {};
+  renderAll();
+});
+
+document.getElementById('exportBtn').addEventListener('click', () => {
+  const deptoNombre = deptoSelect.value;
+  if(!deptoNombre) return;
+  const depto = getDeptoData(deptoNombre);
+  const registros = depto.grupos.map(g => ({
+    departamento: deptoNombre,
+    materia: g.materia,
+    curso: g.curso,
+    grupo: g.grupo,
+    horas: g.horas,
+    profesor: asignacionActual[g.id] || null
+  }));
+  const blob = new Blob([JSON.stringify({ departamento: deptoNombre, generadoEl: new Date().toISOString(), registros }, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `reparto_${deptoNombre.replace(/[^a-z0-9]+/gi,'_')}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+document.getElementById('resetBtn').addEventListener('click', () => {
+  const deptoNombre = deptoSelect.value;
+  if(!deptoNombre) return;
+  if(!confirm(`¿Vaciar todo el reparto de "${deptoNombre}"? Esta acción no se puede deshacer.`)) return;
+  asignacionActual = {};
+  saveAsignacion(deptoNombre);
+  renderAll();
+});
+
+function initDeptoOptions(){
+  deptoSelect.innerHTML = '<option value="">Selecciona...</option>';
+  asignaturasData.departamentos.forEach(d => {
+    const opt = document.createElement('option');
+    opt.value = d.nombre;
+    opt.textContent = `${d.nombre} (${d.totalHoras}h)`;
+    deptoSelect.appendChild(opt);
+  });
+}
+
+Promise.all([
+  fetch('asignaturas.json').then(res => { if(!res.ok) throw new Error('No se pudo cargar asignaturas.json'); return res.json(); }),
+  fetch('profesores_deptos.json').then(res => { if(!res.ok) throw new Error('No se pudo cargar profesores_deptos.json'); return res.json(); })
+])
+.then(([asignaturas, profesores]) => {
+  asignaturasData = asignaturas;
+  profesoresData = profesores;
+  initDeptoOptions();
+  renderAll();
+})
+.catch(err => {
+  console.error(err);
+  deptoSelect.innerHTML = '<option value="">Error al cargar datos</option>';
+  emptyMsg.textContent = 'No se han podido cargar los datos (' + err.message + '). Comprueba que asignaturas.json y profesores_deptos.json están en la misma carpeta.';
+});
+</script>
+
+</body>
+</html>
